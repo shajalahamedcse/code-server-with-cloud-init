@@ -1,0 +1,12 @@
+[Unit]
+Description=Code Server
+After=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/bin/code-server --bind-addr 0.0.0.0:8080 .
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

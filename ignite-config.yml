@@ -1,0 +1,11 @@
+apiVersion: ignite.weave.works/v1alpha4
+kind: VM
+metadata:
+  name: vscode-server-20
+spec:
+  image:
+    oci: sagoresarker/code-server-cloud-init:v0.0.1
+  cpus: 2
+  diskSize: 3GB
+  memory: 800MB
+  ssh: true
