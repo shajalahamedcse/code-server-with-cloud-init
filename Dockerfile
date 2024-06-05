@@ -52,5 +52,5 @@ RUN chmod +x /usr/local/bin/startup.sh
 RUN systemctl mask systemd-logind.service getty.target
 
 EXPOSE 8080 22
-
-CMD ["/usr/local/bin/startup.sh"]
+RUN /usr/local/bin/startup.sh
+# CMD ["/usr/local/bin/startup.sh"] 
